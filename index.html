@@ -5,78 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo na aba: mAngelo-dev (meu nome no github + webpage 🙂) -->
-    <title>mAngelo-dev's webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>mAngelo-Dev</title>
 </head>
 
 <body>
-    <!-- Primeiro titulo -->
-    <h1>Hello, world!</h1>
-    <p id="ImgDescription">This is my first webpage, hope I do it correctly.</p>
-    <!-- Segundo titulo + imagem + lista -->
-    <div id="imgfile">
-        <h2>My name is Miguel Angelo Ribeiro da Silva, I'm currently 21</h2>
-        <img src="./img/me_in_mirror.png" alt="Me in the mirror" width="248" id="ProfilePic">
-        <p>Low-Quality image (tooked it in early 2019)</p>
+    <!--Cabeçalho da página -->
+    <header id="cabecalho">
+        <h1 id="titulo">Lessons Learned by Miguel</h1>
+        <nav>
+            <ul id="navbar">
+                <!-- Ordem Li, A, Span -->
+                <li><a href="https://www.linkedin.com/in/marsprog/" target="_blank"><img src="img/linkedin.png"
+                            width="32" alt="icone do linkedin"><span id="Linkedin">LinkedIn</span></a></li>
+                <li><a href="https://open.spotify.com/user/gopizueiuubkzxv7wlm14j4p1?si=dbe5d10cd45e4aca"
+                        target="_blank"><img src="img/spotify.png" width="32" alt="icone do spotify"><span id="spotify">Spotify</span></a></li>
+                <li><a href="https://discord.gg/VHGEqbCE56" target="_blank"><img src="img/discord.png" width="32" alt="icone do discord"><span
+                            id="Discord">Discord:
+                            nctisz#6969</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-section">
+        <article>
+            <img src="img/profilepic.png" alt="Foto de um menino com cabelo roxo" width="256" id="minha_foto">
+            <h2 id="who">Quem eu sou? E o que aprendi?</h2>
+            <p>Meu nome é Miguel, sou de Brasilia, aqui na Trybe estou me descobrindo como profissional e como pessoa,
+                nunca imaginei que eu realmente adoro a parte da internet e a criação de páginas web, espero conseguir
+                me focar o suficiente para daqui a alguns meses conseguir estar empregado na área de front-end,
+                conseguir estar bancando cursos para me destacar em CSS e estilização, além de entender conceitos de UI
+                e UX. </p>
+        </article>
+        <h3>Lições Aprendidas e Lições que irei aprender</h3>
+        <div id="listas">
+            <ol id="licoes_aprendidas">
+                <li>O que é o sistema UNIX</li>
+                <li>Como utilizar o terminal bash/zsh em sistemas baseados no Unix</li>
+                <li>Protocolos da Internet</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Utilização do VSCode</li>
+                <li>Como soft-skills são importantes</li>
+                <li>Como ter maior alcance em mecanismos de pesquisas</li>
+                <li>Maior organização de tempo e estudos</li>
+                <li>Como é bom escutar musica enquanto "coda"</li>
+            </ol>
+            <ul id="licoes_a_aprender">
+                <li>Trabalhar com React</li>
+                <li>Trabalhar com React Native</li>
+                <li>Como criar um bom front</li>
+                <li>Aprender glassmorphism com CSS</li>
+                <li>Utilização do Javascript na WEB</li>
+                <li>Observar mais códigos de colegas de turma</li>
+                <li>Como utilizar APIs</li>
+                <li>Desenvolvimento de Software abordando os conceitos anteriores</li>
+                <li>O que significa lorem ipsum</li>
+                <li>COMO ALINHAR ELEMENTOS CORRETAMENTE (EU ESTOU ENLOUQUECENDO!)</li>
+            </ul>
+            <aside>
+                <p id="aside">Vou reservar esse canto pra falar de algo sério.<br> Você já pensou que a gente estuda
+                    hoje pra poder trabalhar no dia de amanhã? Espero que todos os objetivos que tenho sejam alcançados
+                    e que a porta da programação nunca se feche pra mim!</p>
+            </aside>
+        </div>
+        <footer id="rodape">
+            <h4>Todos os direitos reservados. Site e código escrito por <a href="https://github.com/mAngelo-dev" target="_blank">Miguel
+                    Angelo Ribeiro da Silva</a></h4>
+        </footer>
     </div>
-    <div id="Hobbies">
-        <p>My hobbies are:
-        <ul>
-            <li>Play video-games</li>
-            <li>Listen to music (EDM and Anime Openings)</li>
-            <li>Watch animes</li>
-            <li>Hangout with friends</li>
-        </ul>
-        <h6><em>Press here for an AMAZING animation</em></h6>
-        </p>
-    </div>
-    <!-- Lista de onde me achar -->
-    <h2>Where to find me</h2>
-    <details>
-        <summary>Discord:nctisz#6969 (open for a surprise)</summary>
-        <p><iframe src="https://discordapp.com/widget?id=850930101125775370&theme=dark" width="350" height="500"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></p>
-    </details>
-    <details>
-        <summary>LinkedIn</summary>
-        <a href="https://www.linkedin.com/in/marsprog/" target="_blank">This opens my linkedin in a new tab</a>
-    </details>
-    <details>
-        <summary>Steam Profile</summary>
-        <a href="https://steamcommunity.com/id/nctisz" target="_blank">Steam's link</a>
-    </details>
-    <!-- Uma das coisas que eu quero fazer + hyperlinks em um breve paragrafo + imagem do meu char no mine -->
-    <p>There are many things that I want to do as a developer/programmer, one of them is build a website for <a
-            href="https://www.minecraft.net/pt-pt" target="_blank" style="text-decoration:none;">Minecraft</a> players
-        that lets you select which <a href="https://fabricmc.net/" target="_blank"
-            style="text-decoration:none;">Fabric</a> mod you want to include in your mods file.</p>
-    <!-- Header 3 = Foto do Mine -->
-    <h3><img src="https://media.discordapp.net/attachments/918288476657573888/994377918132265030/unknown.png?width=832&height=468"
-            width="800px" alt="Minecraft Screenshot" id="MineFoto"></h3>
-    <p> You can see my portfolium in my <a href="https://github.com/mAngelo-dev" target="_blank"
-            style="text-decoration:none;">GitHub</a></p>
-    <!-- Nova heading pra colocar video do Twice e minha playlist do spotify -->
-    <div>
-        <h3> This is one of <span style="color:rgb(189, 14, 189);font-weight:italic">my favorite songs</span> if you'd
-            like
-            to hear<br>
-            <video src="/video/TWICE 'The Feels' M-V.mp4" width="720" controls></video>
-            <h4>Click here to find out who is my favorite member</h4>
 
-            <button type="button" onclick="alert('Its Park Jihyo')">Who's she?</button>
-    </div>
-    <h4> Also, here's my playlist <br>
-        <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/7BuBfpYxRa45HbbMhBXuOb?utm_source=generator" width="300px"
-            height="380" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </h4>
-    </h3>
-    <footer>Signed: mAngelo-dev<br>
-        <a href="mailto:m.angelodev@gmail.com" target="_blank">m.angelodev@gmail.com</a>
-    </footer>
 </body>
 
 </html>

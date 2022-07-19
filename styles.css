@@ -1,69 +1,96 @@
-h1 {
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #eb65f0;
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Assistant , sans-serif;
 }
 
-#ProfilePic {
-    border-radius: 75%;
-    align-items: center;
-    align-content: center;
+html , body {
+  background-color: rgb(253, 251, 251);
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background-color: #FBE9D7;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#cabecalho {
+  top: 0;
+  position: fixed;
+  background-color: rgb(47, 153, 47);
+  background-size: cover;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1;
 }
 
-#ImgDescription {
-    font-size: 10px;
-    text-align: center;
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
 }
 
-#imgfile {
-    text-align: center;
+#navbar li {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
-button {
-    background-color: #eb65f0;
-    border: yellow;
-    border-radius: 10%;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#navbar li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 1em;
 }
 
-div#imgfile {
-    text-align: center;
+#navbar li a:hover {
+  background-color: green;
+  border-radius: 20px;
 }
 
-
-div#Hobbies:active {
-    position: relative;
-    animation: mymove 5s;
+#titulo {
+  text-align: center;
 }
 
-@keyframes mymove {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 300px;
-    }
+#Discord {
+  color: rgb(91, 4, 172);
 }
 
-
-h2 {
-    text-align: center;
+#Linkedin {
+  color: rgb(48, 81, 151);
 }
 
-details {
-    text-align: center;
+#spotify {
+  color: rgb(119, 187, 18);
 }
 
-#MineFoto {
-    border-radius: 4px;
-    margin-left: 500px;
+#main-section {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+}
+
+#minha_foto {
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#licoes_aprendidas {
+  display: block;
+  float: left;
+}
+
+#licoes_a_aprender {
+  display: block;
+  float: right;
+  margin-right: 600px;
+}
+
+#aside {
+  display: inline-block;
+  padding: auto;
+}
+
+#rodape {
+  display: inline-block;
 }
